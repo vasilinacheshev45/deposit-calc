@@ -7,4 +7,9 @@ int main()
     scanf("%d", &sum);
     printf("Vvedite dey");
     scanf("%d", &day);
+ if (sum<100000)
+    {
+    dox=1;
+    }
+
 
