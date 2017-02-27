@@ -33,4 +33,46 @@ if (day>365||day<0)
     {
         day=4;
     }
-
+ switch (day)
+    {
+    case 1: if (dox=1&&sum>1000) {
+            sum=sum-(sum*10)/100;
+             printf("%d", sum); break;}
+            else {
+                if(sum>10000)
+                    {
+                    sum=sum-(sum*10)/100;
+                    printf("%d", sum);}
+            break; }
+    case 2:if (dox=1&&sum>1000) {
+            sum=sum+(sum*2)/100;
+             printf("%d", sum); break;}
+            else {
+                if(sum>10000)
+                    {
+                    sum=sum+(sum*3)/100;
+                    printf("%d", sum);}
+            break; }
+    case 3: if (dox=1&&sum>1000) {
+            sum=sum+(sum*6)/100;
+             printf("%d", sum); break;}
+            else {
+                if(sum>10000)
+                    {
+                    sum=sum+(sum*8)/100;
+                    printf("%d", sum);}
+            break; }
+    case 4: if (dox=1&&sum>1000) {
+            sum=sum+(sum*12)/100;
+             printf("%d", sum); break;}
+            else {
+                if(sum>10000)
+                    {
+                    sum=sum+(sum*15)/100;
+                    printf("%d", sum);}
+            break; }
+        default:
+        printf("Error at summa\n");
+    }
+    return 0;
+}
