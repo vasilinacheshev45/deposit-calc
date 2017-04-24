@@ -16,9 +16,8 @@ int main()
 		printf("Ошибка в сумме");
 	}
     if ((error_date(date) == 1) && (error_vklad(vklad) == 1)){
-        printf("Корректно\n");
         vklad = vklad_time_of_expiry(date, vklad);
-        printf("Cумму вклада:%d",vklad );
+        printf("Cумма вклада после срока:%d",vklad );
     } 
 
     return 0;
