@@ -4,20 +4,21 @@ int main()
 {
     int date, vklad;
 
-    printf("Срок вклада:");
+    printf("Введите срок вклада:");
     scanf("%d", &date);
-    printf("Сумма вклада:");
+    printf("Введите сумму вклада:");
     scanf("%d", &vklad);
 	
-	if (error_date(date) == 0){
-		printf("Ошибка в сроке");
+	if (correctness_date(date) == 0){
+		printf("Не корректно введен срок вклада");
 	}
-	if (error_vklad(vklad) == 0){
-		printf("Ошибка в сумме");
+	if (correctness_vklad(vklad) == 0){
+		printf("Не корректно введен сумма вклада");
 	}
-    if ((error_date(date) == 1) && (error_vklad(vklad) == 1)){
+    if ((correctness_date(date) == 1) && (correctness_vklad(vklad) == 1)){
+        printf("Корректно\n");
         vklad = vklad_time_of_expiry(date, vklad);
-        printf("Cумма вклада после срока:%d",vklad );
+        printf("Cумму вклада:%d",vklad );
     } 
 
     return 0;

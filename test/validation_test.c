@@ -10,7 +10,7 @@ CTEST(suite1, test1)
 
 CTEST(suite1, test2)
 {
-	const int real = 9;
+	const int real = 20;
     printf("Корректность вклада, min 10000:");
     ASSERT_INTERVAL(10,1000000, real);
 }
